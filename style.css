@@ -1,0 +1,102 @@
+
+body {
+  background-color: #141212;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@font-face{
+  font-family: 'primary';
+  src: url('src/Roboto-Black.ttf');
+}
+@font-face{
+  font-family: "digital";
+  src: url('src/DigitalNumbers-Regular.woff');
+}
+
+.timer {
+  height: 100%;
+  width:200px;
+  margin: 5%;
+  display:flex;
+  justify-content: center;
+}
+
+#display {
+  height:100%;
+  width:200px;
+  padding-left:20%;
+  padding-right:20%;
+  font-family: primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+#hrs {
+ 
+  color: #7d0a0a60;
+
+  position: absolute;
+  
+  text-align: center;
+  font-size: 25em;
+  font-weight: strong;
+
+}
+
+#mns {
+  color: #e5a50a;
+  font-size: 4rem;
+  position: relative;
+  
+  
+  
+}
+#point {
+  font-size: 2rem;
+  position: relative;
+  color: #e5a50a;
+}
+
+
+#sec {
+
+  font-size: 4rem;
+  font-weight: bold;
+  position: relative;
+  color: #f6d32d;
+  transform: scaleY(0.8);
+}
+
+#buttons {
+  width:250px;
+  position: absolute;
+  top:80%;
+  z-index: 10;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-evenly;
+  
+}
+.button {
+  color: #deddda;
+  background-color: #241f31;
+  font-family: primary;
+  font-size: 1em;
+  padding: 5px 10px;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: #f9f06b;
+  color: #7d0a0a;
+}
